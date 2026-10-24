@@ -40,7 +40,7 @@ const images = [
 ];
 
 const gallery = document.querySelector('.gallery');
-
+const galleryItems = [];
 images.forEach(image => {
   const imageList = document.createElement('img');
 
@@ -49,5 +49,8 @@ images.forEach(image => {
   const galleryList = document.createElement('li');
   galleryList.classList.add('img-box');
   galleryList.append(imageList);
-  gallery.append(galleryList);
+
+  galleryItems.push(galleryList);
 });
+
+gallery.append(...galleryItems);
