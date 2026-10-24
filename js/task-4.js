@@ -11,7 +11,7 @@
 // форми методом reset.
 
 const form = document.querySelector('.login-form');
-console.log(form);
+
 
 form.addEventListener('submit', event => {
   event.preventDefault();
