@@ -1,0 +1,30 @@
+.widget {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 169px;
+}
+.widget p {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+.widget > button {
+  font-family: inherit;
+  display: block;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 148px;
+  height: 40px;
+  background-color: #4e75ff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.widget > button:focus,
+.widget > button:hover {
+  background-color: #6c8cff;
+}
